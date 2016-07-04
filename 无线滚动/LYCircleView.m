@@ -51,9 +51,11 @@
     UIPageControl *pagecontal = [[UIPageControl alloc] init];
     pagecontal.pageIndicatorTintColor = [UIColor redColor];
     pagecontal.currentPageIndicatorTintColor = [UIColor greenColor];
-    CGFloat pageContralY = self.frame.origin.x + 190;
+    CGFloat pageContralY = self.frame.origin.x + 180;
+     CGSize pageRect = [pagecontal sizeForNumberOfPages:self.totalPageCount];
+    //pagecontal.backgroundColor = [UIColor blackColor];
+    pagecontal.frame = CGRectMake(0, 0, pageRect.width, pageRect.height);
     pagecontal.center = CGPointMake(self.center.x, pageContralY);
-    //pagecontal.frame = CGRectMake(self.center.x, pageContralY, 100, 100);
     pagecontal.numberOfPages = self.totalPageCount;
     [self addSubview:pagecontal];
     _pageContral = pagecontal;
