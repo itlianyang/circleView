@@ -15,6 +15,7 @@
 		04A1916E1D2A0470006E9D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A1916C1D2A0470006E9D6D /* LaunchScreen.storyboard */; };
 		04A191791D2A0470006E9D6D /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A191781D2A0470006E9D6D /* ____Tests.m */; };
 		04A191841D2A0470006E9D6D /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A191831D2A0470006E9D6D /* ____UITests.m */; };
+		04A191931D2A04B9006E9D6D /* LYCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A191921D2A04B9006E9D6D /* LYCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		04A1917F1D2A0470006E9D6D /* 无线滚动UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "无线滚动UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A191831D2A0470006E9D6D /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		04A191851D2A0470006E9D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A191911D2A04B9006E9D6D /* LYCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCircleView.h; sourceTree = "<group>"; };
+		04A191921D2A04B9006E9D6D /* LYCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				04A191671D2A0470006E9D6D /* Main.storyboard */,
 				04A1916A1D2A0470006E9D6D /* Assets.xcassets */,
 				04A1916C1D2A0470006E9D6D /* LaunchScreen.storyboard */,
+				04A191911D2A04B9006E9D6D /* LYCircleView.h */,
+				04A191921D2A04B9006E9D6D /* LYCircleView.m */,
 				04A1916F1D2A0470006E9D6D /* Info.plist */,
 				04A1915E1D2A0470006E9D6D /* Supporting Files */,
 			);
@@ -273,6 +278,7 @@
 				04A191661D2A0470006E9D6D /* ViewController.m in Sources */,
 				04A191631D2A0470006E9D6D /* AppDelegate.m in Sources */,
 				04A191601D2A0470006E9D6D /* main.m in Sources */,
+				04A191931D2A04B9006E9D6D /* LYCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
