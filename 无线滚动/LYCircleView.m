@@ -14,6 +14,7 @@
 @property (nonatomic, assign)NSUInteger totalPageCount;
 @property (nonatomic, assign)NSInteger currentPageIndex;
 @property (nonatomic, assign)NSTimeInterval animationInterval;
+@property (nonatomic, weak)UIPageControl *pageContral;
 @end
 
 @implementation LYCircleView
@@ -42,8 +43,20 @@
     if ([self.delegate respondsToSelector:@selector(numberOfContentViewsInCircleView:)]) {
         _totalPageCount = [self.delegate numberOfContentViewsInCircleView:self];
     }
-    
+    [self addPageContrals];
     [self resetContentViews];
+}
+- (void)addPageContrals{
+    
+    UIPageControl *pagecontal = [[UIPageControl alloc] init];
+    pagecontal.pageIndicatorTintColor = [UIColor redColor];
+    pagecontal.currentPageIndicatorTintColor = [UIColor greenColor];
+    CGFloat pageContralY = self.frame.size.height - 10;
+    pagecontal.center = CGPointMake(self.center.x, pageContralY);
+    //pagecontal.frame = CGRectMake(self.center.x, pageContralY, 100, 100);
+    pagecontal.numberOfPages = self.totalPageCount;
+    [self addSubview:pagecontal];
+    _pageContral = pagecontal;
 }
 //初始化scrollView
 - (void)initScrollView{
@@ -121,7 +134,7 @@
         }
         
         [_scrollView setContentOffset:CGPointMake(self.frame.size.width, 0)];
-        
+        self.pageContral.currentPage = currentPageIndex;
     }
 }
 
