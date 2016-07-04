@@ -51,7 +51,7 @@
     UIPageControl *pagecontal = [[UIPageControl alloc] init];
     pagecontal.pageIndicatorTintColor = [UIColor redColor];
     pagecontal.currentPageIndicatorTintColor = [UIColor greenColor];
-    CGFloat pageContralY = self.frame.size.height - 10;
+    CGFloat pageContralY = self.frame.origin.x + 190;
     pagecontal.center = CGPointMake(self.center.x, pageContralY);
     //pagecontal.frame = CGRectMake(self.center.x, pageContralY, 100, 100);
     pagecontal.numberOfPages = self.totalPageCount;
@@ -62,9 +62,11 @@
 - (void)initScrollView{
     UIScrollView *tmpScrollView = [[UIScrollView alloc] init];
     tmpScrollView.pagingEnabled  = YES;
-    tmpScrollView.frame = self.frame;
+    tmpScrollView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     tmpScrollView.contentSize = CGSizeMake(self.frame.size.width *3, self.frame.size.height);
     tmpScrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
+    tmpScrollView.showsVerticalScrollIndicator = NO;
+    tmpScrollView.showsHorizontalScrollIndicator = NO;
     tmpScrollView.delegate = self;
     
     _scrollView = tmpScrollView;

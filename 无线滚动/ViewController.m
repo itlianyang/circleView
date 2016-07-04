@@ -27,7 +27,7 @@
         imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"m%lu",i+1]];
         [self.ImageViewArray addObject:imageView];
     }
-    LYCircleView * circleview = [[LYCircleView alloc]initWithFrame:CGRectMake(0, 0, circleViewWeith, 200) animationDuration:2];
+    LYCircleView * circleview = [[LYCircleView alloc]initWithFrame:CGRectMake(0, 100, circleViewWeith, 200) animationDuration:2];
     
     circleview.delegate = self;
     //    circleview.backgroundColor = [UIColor redColor];
