@@ -19,6 +19,7 @@
     }
     return _ImageViewArray;
 }
+//hhhhhh
 - (void)viewDidLoad {
     [super viewDidLoad];
      CGFloat circleViewWeith = [UIScreen mainScreen].bounds.size.width;
